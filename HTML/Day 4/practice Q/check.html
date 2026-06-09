@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check</title>
+</head>
+
+<body>
+    <form action="/server">
+        <input type="checkbox" name="age" id="age">
+        <label for="age">I am 18+</label>
+
+        <div><input type="radio" id="mango" name="fruit" value="mango"><label for="mango">mango</label><input
+                type="radio" id="banana" name="fruit" value="banana"><label for="banana">banana</label><input
+                type="radio" id="apple" name="fruit" value="apple"><label for="apple">apple</label></div>
+
+        <div>
+            choose your favorite subjects:
+            <input type="checkbox" id="maths" name="subject" value="maths"><label for="maths">maths</label><input
+                type="checkbox" id="english" name="subject" value="english"><label for="english">english</label><input
+                type="checkbox" id="science" name="subject" value="science"><label for="science">science</label>
+        </div>
+
+        <!--dropdown menu-->
+        <div>
+            choose your favorite color:
+            <select name="color" id="col">
+                <option>Select one option</option>
+                <option value="red">red</option>
+                <option value="blue" selected>blue</option>
+                <option value="green">green</option>
+            </select>
+
+            <!--input range-->
+            <label for="range">Select Volume: </label>
+            <input type="range" name="range" id="range" min="0" max="100" value="35">
+
+            <br>
+            <label for="feedback">give your valuable feedback:</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
