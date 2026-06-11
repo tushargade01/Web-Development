@@ -1,0 +1,29 @@
+body{
+    font-family: georgia;
+}
+h1{
+    text-align: center;
+    color:red;
+}
+h3{
+    text-align: center;
+    color:black;
+}
+p{
+    text-align: center;
+    text-height: 30px;
+}
+a{
+    text-decoration:none;
+    color:rgb(0,255,0);
+}
+button{
+    padding: 10px 20px;
+    background-color:white;
+    color:blueviolet;
+    border:none;
+    border-radius:7px;
+}
+textarea{
+    color:#000000;
+}
