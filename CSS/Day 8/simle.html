@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smileface</title>
+</head>
+<style>
+    .face{
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    .smile{
+        width: 200px;
+        height: 70px;
+        background-color: brown;
+        border-radius: 0 0 30px 30px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+    }
+    .eye{
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 70px;
+        left: 70px;
+    }
+    #eye2{
+        left: 250px;
+    }
+</style>
+<body>
+    <div class="face">
+        <div class="eye"></div>
+        <div class="eye" id="eye2"></div>
+        <div class="smile"></div>
+    </div>
+</body>
+</html>

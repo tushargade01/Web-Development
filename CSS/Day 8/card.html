@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover</title>
+    <style>
+        .card{
+            width: 200px;
+            height: 200px;
+            border-radius: 9px;
+            border: solid 2px;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0 0 8px rgb(0, 0, 0);
+            transition-duration: 1s;
+        }
+        .card:hover{
+            box-shadow: 0 0 18px rgb(255, 153, 0);
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: fill;
+            border-radius: 9px 9px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://img.magnific.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg" alt="man.img">
+        <div class="desc">
+            <h3>Tushar Gade</h3>
+            <p>AI/ML Engineer</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://img.magnific.com/premium-vector/professional-businesswoman-avatar-icon-flat-vector-isolated-white-background_1120563-20454.jpg" alt="man.img">
+        <div class="desc">
+            <h3>Tushar Gade</h3>
+            <p>FrontEnd Developer</p>
+        </div>
+    </div>
+</body>
+</html>

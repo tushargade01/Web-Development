@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .topic {
+            border-bottom: 3px dotted black ;
+        }
+        #alpha{
+            color: rgba(255, 0, 0,0.5);
+        }
+        #opacity{
+            opacity: 0.5;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: rgb(0, 76, 255);
+            /* property name | duration | timing | dealy */
+            transition:background-color 2s ease-in-out 2s;
+        }
+        .box1:hover {
+            color: black;
+            background-color: pink;
+        }
+        .box2{
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            background-color: rgb(0, 176, 0);
+            
+            margin: 10px auto;
+        }
+        .box2:nth-of-type(2n){
+            background-color: yellow;
+        }
+        .box2:nth-last-child(1){
+            background-color: pink;
+        }
+        /* transform */
+        .box2:nth-of-type(1){
+            transform: rotate(45deg);
+        }
+        .box2:nth-of-type(2){
+            /* scale(x,y) | scalex | scaley */
+            transform: scale(1,2);
+        }
+        .box2:nth-of-type(3) {
+            /* move from one direction to another */
+            /* transform: translate(50px,50px); */
+            transform: translatex(-100px);
+            /* transform: translatey(50px); */
+        }
+        .box2:nth-of-type(4) {
+            transform: skew(40deg);
+        }
+        .box2:nth-of-type(5) {
+            transform: translatex(-150px) rotate(46deg) scale(1.6) skew(40deg);
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            margin: 10px auto;
+            text-align: center;
+            background-color: rgb(204, 204, 17);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+        .box4{
+            width: 400px;
+            height: 200px;
+            background-color: blueviolet;
+            margin: 10px auto;
+            background-image: url(https://tse1.mm.bing.net/th/id/OIP.LsSx6kxsbQWlMRJ8S15lkQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Alpa and opacity  -->
+    <div class="topic">
+        <h2>Alpa and opacity</h2>
+        <hr>
+        <p id="alpha">Alpha set the opacity for the color</p>
+        <p id="opacity">opacity - range from 0 to 1</p>
+    </div>
+    
+    <div class="topic">
+        <h2>transitions</h2>
+        <div class="box1">Tushar</div>
+        <p>property name | duration | timing | dealy</p>
+        <hr>
+    </div>
+
+    <div class="topic">
+        <h2>tranform</h2>
+        <p>rotate,scale,skew, or translate</p>
+        <div class="box2">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+        <div class="box2">5</div>
+        
+    </div>
+    <div class="topic">
+        <h2>Box Shadow</h2>
+        <p>shadow effect arround element</p>
+        <p>box-shadow: x y blurness color;</p>
+        <div class="box3">shadow</div>
+    </div>
+    <div class="topic">
+        <h2>background image</h2>
+        <p>background-image:url()</p>
+        <p>background-size:contain(repeat image)/cover(fit image)/auto(strech img)</p>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
