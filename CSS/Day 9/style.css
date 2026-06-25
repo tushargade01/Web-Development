@@ -1,0 +1,18 @@
+.container{
+    height: 400px;
+    width: 400px;
+    font-size: 50px;
+    border: solid 2px skyblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.child {
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 12px;
+    text-align: center;
+    background-color: rgb(114, 114, 114);
+}
