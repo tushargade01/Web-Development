@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Tag</title>
+</head>
+
+<body>
+    <p>
+        let inviteFunction = async (invite) => {
+        let response = await fetch("/invite", {
+        method: "POST",
+        headers: getHeaders(),
+        body: JSON.stringify(invite),
+        });
+        let data = await response.json();
+        if (response.ok) return data;
+        throw new Error(data);
+        }
+    </p>
+
+    <pre>
+        let inviteFunction = async (invite) => {
+        let response = await fetch("/invite", {
+        method: "POST",
+        headers: getHeaders(),
+        body: JSON.stringify(invite),
+        });
+        let data = await response.json();
+        if (response.ok) return data;
+        throw new Error(data);
+        }
+    </pre>
+
+    <pre>
+    This    Text will 
+    be shown   exactly 
+        as it   is written.
+    </pre>
+</body>
+
+</html>
