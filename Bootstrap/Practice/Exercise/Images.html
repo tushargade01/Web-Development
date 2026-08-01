@@ -1,0 +1,133 @@
+<!--
+
+img-fluid
+rounded
+rounded-circle
+img-thumbnail
+d-block
+mx-auto
+float-start
+float-end
+w-25
+w-50
+w-75
+w-100
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Responsive Images -->
+    <img src="cat.jpg" alt="act image" class="img-fluid">
+    <hr>
+
+    <div class="container bg-info">
+        <img src="cat.jpg" alt="cat image" class="img-thumbnail">
+    </div>
+
+    <!-- Rounded Corners -->
+    <img src="cat.jpg" alt="cat image" class="img-fluid rounded">
+    <hr>
+
+    <!-- Circle Image -->
+    <div class="container bg-secondary">
+        <img src="cat.jpg" alt="cat image" class="img-fluid rounded-circle">
+    </div>
+    <hr>
+
+    <!-- Thumbnail images-->
+    <img src="cat.jpg" alt="cat" class="img-thumbnail">
+    <hr>
+
+    <!-- Image Alignment-->
+    <img src="cat.jpg" alt="cat" class="img-fluid d-block mx-auto" width="300">
+    <hr>
+
+    <!-- Float Images -->
+    <p>Float Image</p>
+    <img src="cat.jpg" alt="cat" class="float-start" width="300">
+    <img src="cat.jpg" alt="cat" class="float-end" width="300">
+    <hr>
+
+    <!-- Image Width -->
+    <img src="cat.jpg" alt="cat" class="img-fluit w-25  d-block mx-auto" alt="25%">
+    <hr>
+
+    <!-- Image Gallery using Grid -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col col-md-4">
+                <img src="cat.jpg" alt="cat" class="float-end rounded" width="300">
+            </div>
+            <div class="col col-md-4">
+                <img src="cat.jpg" alt="cat" class="float-end rounded" width="300">
+            </div>
+            <div class="col col-md-4">
+                <img src="cat.jpg" alt="cat" class="float-end rounded" width="300">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr style="border: 2px solid black;">
+
+    <!-- Display an image using img-fluid. -->
+    <img src="cat.jpg" alt="cat" class="img-fluid">
+    <hr>
+
+    <!-- Create a profile picture using:
+1.rounded-circle
+2.img-fluid -->
+
+    <img src="cat.jpg" alt="cat" class="img-fluid rounded-circle">
+    <hr>
+
+    <!-- Display a product image using: img-thumbnail -->
+    <img src="cat.jpg" alt="cat" class="img-thumbnail">
+    <hr>
+
+
+    <!-- Create a centered image using:
+d-block
+mx-auto -->
+    <img src="cat.jpg" alt="cat" class="d-block mx-auto" width="300">
+
+    <!--  Build a gallery with:
+
+Three images
+col-md-4
+img-fluid
+rounded
+
+-->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col col-md-4">
+                <img src="cat.jpg" alt="cat" width="300">
+            </div>
+            <div class="col col-md-4">
+                <img src="cat.jpg" alt="cat" width="300">
+            </div>
+            <div class="col col-md-4">
+                <img src="cat.jpg" alt="cat" width="300">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
