@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Basic text input -->
+    <p class="m-2 text-danger">Basic text input</p>
+
+    <input type="text" class="form-control" placeholder="Enter Name">
+
+    <hr style="color: red; border:solid">
+
+    <!-- Label + input -->
+    <p class="m-2 text-danger">label + input</p>
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+    </div>
+
+    <hr style="color: red; border:solid">
+
+    <!-- Placeholder -->
+    <p class="m-2 text-danger">placeholder</p>
+
+    <input type="email" placeholder="Enter Email" class="form-control">
+
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- Password Field -->
+    <p class="m-2 text-danger">Password Field</p>
+
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Password</label>
+        <input type="password" id="pwd" class="form-control" placeholder="Enter Password">
+    </div>
+
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- Textarea -->
+    <p class="m-2 text-danger">Textarea</p>
+
+    <div class="mb-3 p-3">
+        <label for="feedback" class="form-label">Message</label>
+        <textarea name="feedback" class="form-control" id="feedback" rows="3"></textarea>
+    </div>
+
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+
+    <!-- Select -->
+    <p class="m-2 text-danger">Select</p>
+
+    <div class="mb-5 p-2">
+        <label class="form-label">Country</label>
+        <select class="form-select">
+            <option selected disabled>Select one option</option>
+            <option value="IND">India</option>
+            <option value="USA">USA</option>
+            <option value="CAN">Canada</option>
+        </select>
+    </div>
+
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+
+    <!-- Checkboxs -->
+    <p class="m-2 text-danger">Checkboxs</p>
+
+    <div class="form-check m-5">
+        <input type="checkbox" id="agree" class="form-check-input">
+        <label for="agree" class="form-check-label">I agree to the terms</label>
+    </div>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+
+    <!-- Radio Buttons -->
+    <p class="m-2 text-danger">Radio Buttons</p>
+
+
+    <div class="m-3">
+        <div class="form-check">
+            <input type="radio" name="gender" id="male" class="form-check-input">
+            <label class="form-check-label" for="male">Male</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" id="female" name="gender" class="form-check-input">
+            <label for="female" class="form-check-label">Female</label>
+        </div>
+    </div>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- Switch -->
+    <p class="m-2 text-danger">Switch</p>
+
+    <div class="form-check form-switch m-4">
+        <input class="form-check-input" type="checkbox" id="notify">
+        <label class="form-check-label" for="notify">Enable Notification</label>
+    </div>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- File Upload -->
+    <p class="m-2 text-danger">File Upload</p>
+
+    <div class="m-3">
+        <label for="resume" class="form-label">Upload Resume</label>
+        <input type="file" class="form-control" id="resume">
+    </div>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+
+    <!-- Input Group -->
+
+    <p class="m-2 text-danger">Input Group</p>
+
+    <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" placeholder="Username" class="form-control">
+    </div>
+    <hr>
+
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-text">@gmail.com</span>
+    </div>
+    <hr>
+
+    <div class="input-group">
+        <input type="text" placeholder="search" class="form-control">
+        <button class="btn btn-primary">Search</button>
+    </div>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+
+    <!-- Disabled Input -->
+    <input type="text" value="cant edit" disabled class="form-control">
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- Readonly Input -->
+    <input type="text" value="read only" readonly class="form-control">
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- Form Validation Styles -->
+    <p class="m-2 text-danger">Form Validation Styels</p>
+    <div class="w-50 mx-auto my-4">
+        <input type="text" class="form-control is-valid">
+        <hr>
+        <input type="text" class="form-control is-invalid">
+        <hr>
+
+        <input type="text" class="form-control is-invalid">
+        <div class="invalid-feedback">Please enter your email</div>
+    </div>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+
+    <!-- Login From -->
+    <p class="m-2 text-danger">Login Form</p>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <h2 class="mb-4 text-center">Login</h2>
+
+                <form action="self">
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" placeholder="Enter Email" class="form-control" id="Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pwd">Password</label>
+                        <input type="password" placeholder="Enter Password" id="pwd" class="form-control">
+                    </div>
+                    <button class="btn btn-primary w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr class="text-danger" style="border:solid; color: rgb(98, 0, 255);">
+
+    <!-- Registration Form -->
+    <p class="m-2 text-danger">Registration Form</p>
+
+    <form action="self" class="w-50 ms-2 mt-2">
+        <div class="mb-3">
+            <label for="fullname" class="form-label">Full Name</label>
+            <input type="text" placeholder="Enter your full name" class="form-control" id="fullname">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" placeholder="Enter Email" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" placeholder="Enter Passweord" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Country</label>
+            <select name="country" class="form-control">
+                <option disabled selected>select from follwing</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="agree1">
+            <label for="agree1">I agree to the terms</label>
+        </div>
+        <button class="btn btn-success">Register</button>
+    </form>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- Contact Form -->
+    <form action="self">
+        <div class="mb-3">
+            <input type="text" placeholder="Enter your name" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <input type="email" placeholder="enter your email" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="message"></textarea>
+        </div>
+
+        <button class="btn btn-primary">Send Message</button>
+    </form>
+    <hr style="color: rgb(98, 0, 255); border:solid">
+
+    <!-- Practice Exercises-->
+    <p class="m-2 text-warning">Practice Exercises</p>
+
+    <!-- Login Form
+
+Email
+Password
+Login button
+-->
+    <form action="self" class="w-50 mx-auto bg-secondary p-5">
+        <h2 class="text-center">Login</h2>
+        <div class="mb-3">
+            <label for="mail" class="form-label">Email</label>
+            <input type="email" id="mail" class="form-control" placeholder="Enter Email">
+        </div>
+
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password">
+        </div>
+
+        <button class="btn btn-primary w-100">Login</button>
+    </form>
+    <hr style="color: rgb(99, 0, 81); border:solid">
+
+    <!-- Registration Form -->
+    <p class="m-2 text-warning">Registration Form</p>
+
+    <form action="self" class="ms-2 w-75">
+        <div class="mb-3">
+            <label for="name" class="form-label">Enter Your Name</label>
+            <input type="text" id="name" placeholder="full name" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" placeholder="Enter Prepix" class="form-control">
+            <span class="input-group-text">@gmail.com</span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <select class="form-select">
+                <option disabled selected>choose your country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>China</option>
+            </select>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="agreed">
+            <label for="agreed" class="form-label">I agreed all terms and condition</label>
+        </div>
+
+        <button class="btn btn-success">Register</button>
+    </form>
+    <hr style="color: rgb(99, 0, 81); border:solid">
+
+    <!-- search bar -->
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input type="text" placeholder="Search" class="form-control">
+        <button class="btn btn-primary">Search</button>
+    </div>
+    <hr style="color: rgb(99, 0, 81); border:solid">
+
+    <!-- Feedback Form -->
+    <div class="mb-3 w-75 mx-auto">
+        <h2 class="text-center">Feedback Form</h2>
+        <form action="self">
+            <div class="mb-3">
+                <input type="text" placeholder="Enter Name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="email" placeholder="Enter EMail" class="form-control">
+            </div>
+            <div class="mb-3">
+                <textarea rows="4" class="form-control" placeholder="Enter Message Here"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+    <hr style="color: rgb(99, 0, 81); border:solid">
+
+    <!-- Validation Demo -->
+    <div class="w-50 mx-auto p-3">
+        <input type="text" class="form-control is-valid mb-3" placeholder="This is Valid">
+        <input type="text" class="form-control is-invalid" placeholder="This is invalid">
+        <div class="invalid-feedback">This is a wrong</div>
+
+    </div>
+
+<!--
+form-control
+form-label
+form-select
+form-check
+form-check-input
+form-check-label
+form-switch
+input-group
+input-group-text
+is-valid
+is-invalid
+invalid-feedback
+w-100    
+
+-->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
