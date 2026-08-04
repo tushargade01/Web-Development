@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <!-- Basic Navbar -->
+    <p class="text-danger ms-2 my-2">Basic Navbar</p>
+
+    <nav class="navbar bg-secondary">
+        <div class="container">
+            <a href="#" class="navbar-brand">My Website</a>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+    <!-- Dark Navbar -->
+    <p class="text-danger ms-2 my-2">Dark Navbar</p>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">My Website</a>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+    <!-- Navigation Links -->
+
+    <p class="text-danger ms-2 my-2">Navigation Links</p>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+
+    <!-- Responsive Navbar -->
+    <p class="text-danger ms-2 my-2">Responsive Navbar</p>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">Bootstrap</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+    <!-- Align Menu to the right -->
+    <p class="text-danger ms-2 my-2">Align Menu to the right</p>
+
+    <p class="ms-3">
+        <code>&lt;ul class="navbar-nav ms-auto"&gt;&lt;/ul&gt;</code>
+        — <code>ms-auto</code> means <strong>margin-start: auto</strong>.
+    </p>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+
+
+    <!-- Active Link -->
+    <p class="text-danger ms-2 my-2">Active Link</p>
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Contact</a> <!-- Here is active-->
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Coming soon</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+
+
+    <!-- Navbar with Search -->
+    <p class="text-danger ms-2 my-2">Navbara with search</p>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                Shop
+            </a>
+
+            <form action="self" class="d-flex">
+                <input type="search" placeholder="Search" class="form-control me-2">
+
+                <button class="btn btn-outline-success">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+    <!-- Navbar with dropdown -->
+    <p class="text-danger ms-2 my-2">Navbar with dropdown</p>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+
+                <li class="nav-item dropdown">
+
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" class="dropdown-item">Web Design</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                SEO
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Hosting
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+
+    <!-- syickly Navbar -->
+    <p class="text-danger ms-2 my-2">Basic Navbar</p>
+
+    <nav class="navbar bg-secondary sticky-bottom">
+        <div class="container">
+            <a href="#" class="navbar-brand">Sticky bottom</a>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+
+    <!-- Fixted Navbar -->
+    <p class="text-danger ms-2 my-2">fixed Navbar</p>
+
+    <nav class="navbar bg-secondary fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">fixed Navbar (Bottom)</a>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(16, 0, 41);">
+
+
+    <!-- Practice Exercises-->
+
+    <pre class="text-dark ms-2">1.Create a navbar with:
+Website logo
+Home
+About
+Contact
+</pre>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(140, 0, 0);">
+
+    <pre class="text-dark ms-2">2.Make it responsive using:
+navbar-expand-lg
+navbar-toggler
+collapse
+</pre>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Tushar</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(140, 0, 0);">
+
+
+    <pre class="text-dark ms-2">3.Add a search box to the navbar.
+</pre>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            <form class="d-flex">
+                <input type="search" class="form-control me-2" placeholder="Search">
+                <button class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <hr style="border: solid 2px rgb(140, 0, 0);">
+
+
+    <pre class="text-dark ms-2">4.Add a dropdown called "Services" with:
+Web Design
+App Development
+SEO
+</pre>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="menu2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu3">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Web Design</a></li>
+                            <li><a href="#" class="dropdown-item">App Development</a></li>
+                            <li><a href="#" class="dropdown-item">SEO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">COntact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
