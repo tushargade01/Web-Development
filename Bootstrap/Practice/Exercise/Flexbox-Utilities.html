@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Utilities</title>
+
+    <link rel="icon" href="https://picsum.photos/300">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <p class="text-danger font-monospace ms-2 mt-2">1.Display Flex (d-flex)</p>
+
+    <div class="d-flex"> <!-- help to make horizontal stack-->
+        <div class="p-3 bg-primary text-white">
+            One
+        </div>
+        <div class="p-3 bg-success text-white">
+            Two
+        </div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">2.flex direction row</p>
+
+    <div class="d-flex flex-row">
+        <div class="bg-primary">one</div>
+        <div class="bg-secondary">two</div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+    <p class="text-danger font-monospace ms-2 mt-2">2.flex direction colmun</p>
+
+    <div class="d-flex flex-column">
+        <div class="bg-primary">one</div>
+        <div class="bg-secondary">two</div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+    <p class="text-danger font-monospace ms-2 mt-2">3. Justify Content</p>
+
+    <div class="d-flex justify-content-start"> <!-- start -->
+        <div>one</div>
+        <div>two</div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-center"> <!--center-->
+        <div>one</div>
+        <div>two</div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-end"> <!-- end -->
+        <div>one</div>
+        <div>two</div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-between"> <!-- between-->
+        <div>one</div>
+        <div>two</div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-around">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-evenly">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">4.Align Items</p>
+
+    <div class="d-flex align-items-center bg-secondary" style="height: 200px;">
+        <!--
+        1.align-items-start 
+        2.align-items-center
+        3.align-items-end
+         
+        -->
+        <div class="bg-primary text-white p-3">
+            Centered
+        </div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">5.Center both horizontally and Vertically</p>
+
+
+    <div class="d-flex bg-danger align-items-end justify-content-center" style="height: 300px;">
+        <h1 class="text-light">Hello</h1>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+    <p class="text-danger font-monospace ms-2 mt-2">6.Gap</p>
+
+    <div class="d-flex gap-5 bg-primary p-2">
+        <button class="btn btn-success">Save</button><button class="btn btn-warning">Edit</button><button
+            class="btn btn-danger">Delete</button>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+    <p class="text-danger font-monospace ms-2 mt-2">7.Flex Wrap</p>
+    <!-- If There is no enough space. items move to the next line (usable for small screen and make items responsive)-->
+    <div class="d-flex flex-wrap gap-2">
+        <div class="p-3 bg-primary">1</div>
+        <div class="p-3 bg-primary">2</div>
+        <div class="p-3 bg-primary">3</div>
+        <div class="p-3 bg-primary">4</div>
+        <div class="p-3 bg-primary">5</div>
+        <div class="p-3 bg-primary">6</div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">8.Auto Margin with Flex</p>
+
+    <div class="d-flex">
+        <div>logo</div>
+        <div class="ms-auto">menu</div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">9.Responsive Flex</p>
+
+    <div class="d-flex flex-column flex-md-row gap-3">
+        <div class="bg-primary text-white p-3">
+            One
+        </div>
+        <div class="bg-success text-white p-3">Two</div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+    <p class="text-danger font-monospace ms-2 mt-2">10.Real Website Example</p>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center align-iteams-center">
+            <h2>Dashboard</h2>
+            <button class="btn btn-primary ms-auto">Add User</button>
+        </div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+    <p class="text-danger font-monospace ms-2 mt-2">11.Profile Card Layout</p>
+
+    <div class="card p-3">
+        <div class="d-flex align-items-center">
+            <img src="https://picsum.photos/200" alt="random-img" class="rounded-circle me-3" width="70">
+
+            <div>
+                <h5 class="mb-1">Tushar G</h5>
+                <p class="mb-0 text-muted">Web Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+    <p class="text-danger font-monospace ms-2 mt-2">13.Hero Section</p>
+
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-center gap-5">
+            <div>
+                <h1 class="display-4">Learn Bootstrap</h1>
+                <p class="lead">Build responsive websites.</p>
+                <button class="btn btn-primary">get started</button>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300" alt="random-img" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+
+    <!-- Practice Exercises -->
+<h5 class="display-5">Practice Exercises</h5>
+<pre class="font-monospace ms-2 text-danger">
+1.Create two boxes in a row using:
+d-flex
+</pre>
+
+    <div class="d-flex flex-row">
+        <div class="bg-danger">one</div>
+        <div class="bg-warning"> two</div>
+    </div>
+
+<hr style="border: solid 2px rgb(26, 0, 0);">
+
+<pre class="font-monospace ms-2 mt-3 text-danger">
+2.Center a heading both horizontally and vertically inside a 300px tall box.
+</pre>
+
+<div class="bg-primary d-flex justify-content-center align-items-center" style="height: 300px;">
+    <h5>Centered</h5>
+</div>
+
+<hr style="border: solid 2px rgb(26, 0, 0);">
+
+<pre class="font-monospace ms-2 mt-3 text-danger">
+3.Create three buttons with:
+d-flex
+gap-3
+</pre>
+
+    <div class="d-flex gap-3">
+        <button class="btn btn-primary">One</button>
+        <button class="btn btn-secondary">Two</button>
+        <button class="btn btn-warning">Three</button>
+    </div>
+
+<hr style="border: solid 2px rgb(26, 0, 0);">
+
+<pre class="font-monospace ms-2 mt-3 text-danger">
+4.Create a layout with:
+Logo on the left
+Login button on the right
+Use ms-auto
+</pre>
+    <div class="d-flex align-items-center m-3 p-2 bg-warning">
+        <div>LOgO</div>
+        <button class="btn btn-primary ms-auto">Login</button>
+    </div>
+
+<hr style="border: solid 2px rgb(26, 0, 0);">
+
+<pre class="font-monospace ms-2 mt-3 text-danger">
+5.Create a responsive layout:
+
+flex-column on small screens
+flex-row on medium and larger screens
+</pre>
+
+    <div class="d-flex flex-column flex-lg-row">
+        <button class="btn btn-primary mb-2 me-lg-2">one</button>
+        <button class="btn btn-primary mb-2 me-lg-2">two</button>
+        <button class="btn btn-primary mb-2 me-lg-2">three</button>
+    </div>
+
+<hr style="border: solid 2px rgb(26, 0, 0);">
+
+<!--
+
+d-flex
+flex-row
+flex-column
+flex-wrap
+justify-content-start
+justify-content-center
+justify-content-end
+justify-content-between
+justify-content-around
+justify-content-evenly
+align-items-start
+align-items-center
+align-items-end
+gap-1
+gap-2
+gap-3
+gap-4
+gap-5
+ms-auto
+me-3  
+
+-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+
+</html>
