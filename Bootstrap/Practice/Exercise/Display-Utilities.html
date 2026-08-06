@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Utilities</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <p class="text-danger font-monospace ms-2 mt-2">1.d-block</p>
+    <!-- 
+        start at new line 
+        takes the full available width 
+    -->
+
+    <span class="d-block bg-primary text-white p-2">im now a block element</span>
+
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">2.d-inline</p>
+    <!-- 
+        stays on the same line
+        only take as much width as needed
+    -->
+
+    <span class="d-inline bg-primary text-white p-2">im now a block element</span>
+    <span class="d-inline bg-primary text-white p-2">im now a block element</span>
+
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">3.d-inline-block</p>
+    <!-- 
+        begaves like an inline element but allows width,height, and padding like a block
+    -->
+
+    <div class="d-inline-block bg-primary text-white p-3 m-2" style="width:150px; height:80px;">
+        Box 1
+    </div>
+
+    <div class="d-inline-block bg-success text-white p-3 m-2" style="width:150px; height:80px;">
+        Box 2
+    </div>
+
+    <div class="d-inline bg-danger text-white p-3 m-2" style="width:150px; height:80px;">
+        Box 3
+    </div><!-- width and height not added -->
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">4.d-none</p>
+    <!-- 
+        Hide an element
+    -->
+    <p class="d-none">you cannot see me.</p>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+
+    <p class="text-danger font-monospace ms-2 mt-2">5.Responsive Display</p>
+    <!-- 
+        Hide on small screens, show on medium and larger
+    -->
+
+    <p class="d-none d-md-block">Visible on medium screens and larger</p>
+
+    <p class="d-block d-md-none">Visible on small screens.</p>
+
+    <hr style="border: solid 2px rgb(26, 0, 0);">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+
+</html>
